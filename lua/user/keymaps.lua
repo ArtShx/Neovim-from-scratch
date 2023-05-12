@@ -25,6 +25,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Normal GUI Editor Shortcuts
+keymap("n", "<C-w>", ":Bdelete<CR>", opts)
+keymap("n", "<C-s>", ":w<CR>", opts)
+keymap("i", "<C-s>", "<ESC>:w<CR>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
